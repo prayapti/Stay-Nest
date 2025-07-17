@@ -1,0 +1,158 @@
+body{
+    
+ font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*navbar*/
+.navbar{
+    height: 5rem;
+    background-color:white;
+}
+
+.fa-plane-departure{
+     color:rgb(125, 28, 74);
+transform: scale(1.2); /* slightly bigger */
+  text-shadow: 0 0 1px rgb(125, 28, 74);
+}
+
+.navbar-nav{
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+.f-info-links a{
+    text-decoration: none ;
+    color: #000000 ;
+    vertical-align: middle;
+
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+     justify-content: center ;
+}
+ .f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-info{
+    text-align: center;
+    display:flex;
+    height:8rem;
+    background-color: rgb(245, 222, 238);
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: space-evenly;
+}
+
+/*cards style */
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+padding: 0% !important;
+}
+
+.card-text{
+    font-weight: bold;
+}
+
+.card-image-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+.listing-card {
+  transition: all 0.3s ease;
+}
+
+.listing-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  transform: translateY(-5px); /* Slight upward lift */
+}
+
+.custom-btn {
+  background-color: rgb(125, 28, 74) !important;
+  color: white !important;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.custom-btn:hover {
+  background-color: rgb(105, 20, 60) !important;
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit-btn{
+     background-color: rgb(125, 28, 74) !important;
+     color: white !important;
+      border: none;
+}
+
+
+
+.show-img{
+    height: 30vh;
+}
+.btn.btn-custom {
+  background-color: rgb(125, 28, 74) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn.btn-custom:hover {
+  background-color: rgb(100, 20, 60) !important;
+  color: white !important;
+}
+
+.show-img {
+  width: 150%;           /* Full container width */
+  max-height: 350px;     /* Max height fix kare, adjust kar sakte hain */
+  object-fit: contain;   /* Image ka aspect ratio safe rahega, crop nahi hoga */
+  border-radius: 8px;
+  display: block;        /* Inline spacing problems ke liye */
+  margin: 0 auto;        /* Center alignment */
+}
+
+.card-body p.card-text {
+  font-size: 1.1rem;  /* Overall text size thoda bada */
+  line-height: 1.4;
+}
+
+.card-body p.card-text b {
+  font-size: 1.5rem;  /* Title ko aur bada karo */
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.card-image-overlay {
+  display: none;
+}

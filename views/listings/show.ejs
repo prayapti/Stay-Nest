@@ -1,0 +1,31 @@
+<% layout("layouts/boilerplate") %>
+
+<div class="row mt-3">
+  <div class="col-8 offset-2">
+    <h3>Listing details:</h3>
+
+    <div class="card col-12">
+      <img src="<%= listing.image.url %>" class="card-img-top show-img" alt="listing_image" 
+           style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;" />
+
+      <div class="card-body">
+        <p class="card-text">
+        <b><%= listing.title %></b><br>
+          <%= listing.description %><br>
+          &#x20B9;<%= listing.price.toLocaleString("en-IN") %> <br>
+          <%= listing.location %><br>
+          <%= listing.country %>
+        </p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="btns d-flex gap-2">
+      <a href="/listings/<%= listing._id %>/edit" class="btn btn-custom" style="background-color: rgb(125, 28, 74); color: white;">Edit</a>
+      <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE" onsubmit="return confirm('Are you sure?');">
+        <button type="submit" class="btn btn-custom" style="background-color: rgb(125, 28, 74); color: white;">Delete</button>
+      </form>
+    </div>
+  </div>
+</div>  
