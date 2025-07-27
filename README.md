@@ -34,6 +34,8 @@ Stay-Nest/
 
 ## 🔧 Getting Started
 
+[checkout the demo video over https://drive.google.com/file/d/1wGkPH9mNHLgZL0Hg8Cep7skfr3jghvEn/view?usp=sharing]
+
 ```bash
 # Clone the repository
 git clone https://github.com/prayapti/Stay-Nest.git
